@@ -4,6 +4,7 @@ export interface IStore {
     test: string;
 }
 
+//test pull request
 export class Store {
     @observable
     store: IStore = {
