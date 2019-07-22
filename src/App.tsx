@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Store } from './services/StoreExample';
 
-function App() {
+const store: Store = new Store();
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {store.store.test}
         </a>
       </header>
     </div>
