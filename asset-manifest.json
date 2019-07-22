@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pocketplate/static/css/main.2cce8147.chunk.css",
-    "main.js": "/pocketplate/static/js/main.e625952d.chunk.js",
-    "main.js.map": "/pocketplate/static/js/main.e625952d.chunk.js.map",
+    "main.css": "/pocketplate/static/css/main.ba49ec77.chunk.css",
+    "main.js": "/pocketplate/static/js/main.b1cf6fd6.chunk.js",
+    "main.js.map": "/pocketplate/static/js/main.b1cf6fd6.chunk.js.map",
     "runtime~main.js": "/pocketplate/static/js/runtime~main.955d80de.js",
     "runtime~main.js.map": "/pocketplate/static/js/runtime~main.955d80de.js.map",
-    "static/js/2.b41502e9.chunk.js": "/pocketplate/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/pocketplate/static/js/2.b41502e9.chunk.js.map",
+    "static/js/2.e46d3821.chunk.js": "/pocketplate/static/js/2.e46d3821.chunk.js",
+    "static/js/2.e46d3821.chunk.js.map": "/pocketplate/static/js/2.e46d3821.chunk.js.map",
     "index.html": "/pocketplate/index.html",
-    "precache-manifest.5a23ac761ce2b8550cc238d3202cd519.js": "/pocketplate/precache-manifest.5a23ac761ce2b8550cc238d3202cd519.js",
+    "precache-manifest.a730f30333f5a2dc16a391ba496cc8aa.js": "/pocketplate/precache-manifest.a730f30333f5a2dc16a391ba496cc8aa.js",
     "service-worker.js": "/pocketplate/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/pocketplate/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/pocketplate/static/media/logo.5d5d9eef.svg"
+    "static/css/main.ba49ec77.chunk.css.map": "/pocketplate/static/css/main.ba49ec77.chunk.css.map",
+    "static/media/logo.svg": "/pocketplate/static/media/logo.ee7cd8ed.svg"
   }
 }
