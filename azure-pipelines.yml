@@ -18,5 +18,8 @@ steps:
 - script: |
     npm install
     npm run build
+  displayName: 'npm install and build'
+
+- script: |
     CI=true npm test -- --coverage
-  displayName: 'npm install, build, test'
+  displayName: 'npm test with coverage'
