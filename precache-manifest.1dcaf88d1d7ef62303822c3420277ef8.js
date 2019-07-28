@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1ee7fe513971794d5398461b141a230",
+    "revision": "cac8240f27de7b14c9bc718bd13ec8ad",
     "url": "/pocketplate/index.html"
   },
   {
-    "revision": "413bfdb4ac27a2f56111",
+    "revision": "9ba6830697003862b4fb",
     "url": "/pocketplate/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pocketplate/static/js/2.e46d3821.chunk.js"
   },
   {
-    "revision": "413bfdb4ac27a2f56111",
-    "url": "/pocketplate/static/js/main.f7987788.chunk.js"
+    "revision": "9ba6830697003862b4fb",
+    "url": "/pocketplate/static/js/main.5fa9ebb1.chunk.js"
   },
   {
     "revision": "72fd7ae3158158b56558",

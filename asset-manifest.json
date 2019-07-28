@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pocketplate/static/css/main.2cce8147.chunk.css",
-    "main.js": "/pocketplate/static/js/main.f7987788.chunk.js",
-    "main.js.map": "/pocketplate/static/js/main.f7987788.chunk.js.map",
+    "main.js": "/pocketplate/static/js/main.5fa9ebb1.chunk.js",
+    "main.js.map": "/pocketplate/static/js/main.5fa9ebb1.chunk.js.map",
     "runtime~main.js": "/pocketplate/static/js/runtime~main.955d80de.js",
     "runtime~main.js.map": "/pocketplate/static/js/runtime~main.955d80de.js.map",
     "static/js/2.e46d3821.chunk.js": "/pocketplate/static/js/2.e46d3821.chunk.js",
     "static/js/2.e46d3821.chunk.js.map": "/pocketplate/static/js/2.e46d3821.chunk.js.map",
     "index.html": "/pocketplate/index.html",
-    "precache-manifest.0d472707f43dce337a090bf133f9632d.js": "/pocketplate/precache-manifest.0d472707f43dce337a090bf133f9632d.js",
+    "precache-manifest.1dcaf88d1d7ef62303822c3420277ef8.js": "/pocketplate/precache-manifest.1dcaf88d1d7ef62303822c3420277ef8.js",
     "service-worker.js": "/pocketplate/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/pocketplate/static/css/main.2cce8147.chunk.css.map",
     "static/media/logo.svg": "/pocketplate/static/media/logo.5d5d9eef.svg"
