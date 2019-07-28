@@ -25,7 +25,7 @@ steps:
   displayName: 'npm test with coverage'
 
 - script: |
-    git config --global user.email "$(pocketplate-git-user)"
+    git config --global user.name "$(pocketplate-git-user)"
     git config --global user.password "$(pocketplate-git-pass)"
     npm run deploy
   displayName: 'git login and npm deploy'
