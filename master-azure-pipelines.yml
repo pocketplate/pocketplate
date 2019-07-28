@@ -25,7 +25,7 @@ steps:
   displayName: 'npm test with coverage'
 
 - script: |
-    git config user.name "$(pocketplate-git-user)"
-    git config user.password "$(pocketplate-git-pass)"
-    npm run deploy
+    git config user.email "alexandre.consigny+2@r3d.com"
+    git config user.name "pocketplate"
+    npm run deploy -- -r https://$(pocketplate-pat-deploy)@github.com/pocketplate/pocketplate.git
   displayName: 'git login and npm deploy'
