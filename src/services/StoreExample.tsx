@@ -7,7 +7,7 @@ export interface IStore {
 export class Store {
     @observable
     store: IStore = {
-        test: 'rick and morty season 4 waiting room'
+        test: 'Dota Underlords'
     }
 
     @action
