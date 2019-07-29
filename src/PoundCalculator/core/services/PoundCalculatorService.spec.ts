@@ -1,0 +1,2 @@
+it('init without crashing', () => {
+});
