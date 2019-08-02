@@ -1,12 +1,12 @@
 import { PoundCalculatorBuilder } from './PoundCalculatorBuilder';
 import { CalculatorInput } from '../models/CalculatorInput';
-import { PoundWeights } from '../models/PoundWeights';
+import { PoundWeights } from '../models/PoundWeights-Constants';
 import { PoundCalculatorHelper } from '../helpers/PoundCalculatorHelper';
 
 let poundCalculatorBuilder: PoundCalculatorBuilder;
 let helper: PoundCalculatorHelper;
 let calculatorInput: CalculatorInput;
-let weights: PoundWeights;
+let weights: PoundWeights[];
 const A_DEFAULT_RESULT = {plates:[]};
 const A_HELPER_RESULT = {plates:[1,2,3]}
 
@@ -16,7 +16,7 @@ beforeEach(() => {
     poundCalculatorBuilder = new PoundCalculatorBuilder(helper);
 
     calculatorInput = { } as CalculatorInput;
-    weights = { } as PoundWeights;
+    weights = [{ }] as PoundWeights[];
 });
 
 it('init without crashing', () => {

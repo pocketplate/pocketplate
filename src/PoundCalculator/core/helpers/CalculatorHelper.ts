@@ -1,7 +1,7 @@
 import { CalculatorOutput } from "../models/CalculatorOutput";
 import { CalculatorInput } from "../models/CalculatorInput";
-import { PoundWeights } from "../models/PoundWeights";
+import { PoundWeights } from "../models/PoundWeights-Constants";
 
 export interface CalculatorHelper {
-    toCalculatorOutput(inputs: CalculatorInput, weights: PoundWeights): CalculatorOutput;
+    toCalculatorOutput(inputs: CalculatorInput, weights: PoundWeights[]): CalculatorOutput;
 }

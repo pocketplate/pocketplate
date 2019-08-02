@@ -1,26 +1,36 @@
 import { CalculatorOutput } from "../models/CalculatorOutput";
 import { CalculatorInput } from "../models/CalculatorInput";
-import { PoundWeights } from "../models/PoundWeights";
+import { PoundWeights } from "../models/PoundWeights-Constants";
 import { CalculatorHelper } from "./CalculatorHelper";
 
 export class PoundCalculatorHelper implements CalculatorHelper {
-    public toCalculatorOutput(inputs: CalculatorInput, weights: PoundWeights): CalculatorOutput {
-        let poundWeights = [];
+    public toCalculatorOutput(inputs: CalculatorInput, weights: PoundWeights[]): CalculatorOutput {
+        let poundWeights: number[] = [];
         let totalPounds = 0;
+        let baseWeight = 0;
 
         if (inputs && weights) {
-            poundWeights = this.fromWeightsToArray(weights);
+            poundWeights = weights;
             totalPounds = inputs.weight;
+            baseWeight = inputs.barAndCollar || 0;
         }
 
-        return { plates: this.compute(totalPounds, poundWeights) };
+        const plates = this.compute(totalPounds, poundWeights, baseWeight);
+
+        return { plates: plates };
     }
 
-    private fromWeightsToArray(weights: PoundWeights): number[] {
-        return [];
-    }
+    private compute(totalPounds: number, weights: number[], baseWeight: number): number[] {
+        const result = [];
+        let realWeight = Math.round((Math.max(totalPounds - baseWeight, 0) / 2));
+        let numberOfWeight: number;
 
-    private compute(totalPounds: number, weights: number[]): number[] {
-        return [];
+        weights.map((weight: number) => {
+            numberOfWeight = Math.round(Math.floor(realWeight / weight));
+            result.push(numberOfWeight || 0);
+            realWeight -= (numberOfWeight * weight);
+        });
+
+        return result;
     }
 }

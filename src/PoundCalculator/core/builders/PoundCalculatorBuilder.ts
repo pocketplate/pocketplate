@@ -1,12 +1,12 @@
 import { CalculatorBuilder } from "./CalculatorBuilder";
 import { CalculatorOutput } from "../models/CalculatorOutput";
 import { CalculatorInput } from "../models/CalculatorInput";
-import { PoundWeights } from "../models/PoundWeights";
+import { PoundWeights } from "../models/PoundWeights-Constants";
 import { CalculatorHelper } from "../helpers/CalculatorHelper";
 
 export class PoundCalculatorBuilder implements CalculatorBuilder {
     input: CalculatorInput;
-    weights: PoundWeights;
+    weights: PoundWeights[];
 
     constructor(public helper: CalculatorHelper) { }
 
@@ -16,7 +16,7 @@ export class PoundCalculatorBuilder implements CalculatorBuilder {
         return this;
     }
 
-    public usingPoundWeights(weights: PoundWeights): CalculatorBuilder {
+    public usingPoundWeights(weights: PoundWeights[]): CalculatorBuilder {
         this.weights = weights;
 
         return this;
