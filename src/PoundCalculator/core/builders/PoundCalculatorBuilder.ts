@@ -2,24 +2,27 @@ import { CalculatorBuilder } from "./CalculatorBuilder";
 import { CalculatorOutput } from "../models/CalculatorOutput";
 import { CalculatorInput } from "../models/CalculatorInput";
 import { PoundWeights } from "../models/PoundWeights";
+import { CalculatorHelper } from "../helpers/CalculatorHelper";
 
 export class PoundCalculatorBuilder implements CalculatorBuilder {
     input: CalculatorInput;
     weights: PoundWeights;
 
-    public create(): CalculatorBuilder {
-        throw new Error("Method not implemented.");
-    }
+    constructor(public helper: CalculatorHelper) { }
 
     public usingCalculatorInput(calculatorInput: CalculatorInput): CalculatorBuilder {
-        throw new Error("Method not implemented.");
+        this.input = calculatorInput;
+
+        return this;
     }
 
     public usingPoundWeights(weights: PoundWeights): CalculatorBuilder {
-        throw new Error("Method not implemented.");
+        this.weights = weights;
+
+        return this;
     }
 
     public build(): CalculatorOutput {
-        throw new Error("Method not implemented.");
+        return this.helper.toCalculatorOutput(this.input, this.weights);
     }
 }
