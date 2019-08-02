@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://pocketplate.github.io/pocketplate/",
   "dependencies": {
+    "@types/jest": "^24.0.15",
     "gh-pages": "^2.0.1",
     "jest-junit": "^7.0.0",
     "mobx": "^5.13.0",
