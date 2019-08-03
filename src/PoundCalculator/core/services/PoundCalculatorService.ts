@@ -12,8 +12,7 @@ export class PoundCalculatorService implements CalculatorService {
     }
 
     public compute(input: CalculatorInput): CalculatorOutput {
-        const weights:PoundWeights[] = [PoundWeights.Biggest, PoundWeights.Bigger, PoundWeights.Big,
-            PoundWeights.Normal,
+        const weights: PoundWeights[] = [PoundWeights.Biggest, PoundWeights.Bigger, PoundWeights.Big,
             PoundWeights.Thin, PoundWeights.Thinner, PoundWeights.Thinniest];
 
         return this.calculatorBuilder

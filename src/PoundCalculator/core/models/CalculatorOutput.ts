@@ -1,3 +1,4 @@
 export interface CalculatorOutput {
-    plates: number[]
+    frequencyOfPlates: number[],
+    platesConfig: number[]
 }

@@ -5,19 +5,18 @@ import { CalculatorHelper } from "./CalculatorHelper";
 
 export class PoundCalculatorHelper implements CalculatorHelper {
     public toCalculatorOutput(inputs: CalculatorInput, weights: PoundWeights[]): CalculatorOutput {
-        let poundWeights: number[] = [];
+        let poundWeights: number[] = weights || [];
         let totalPounds = 0;
         let baseWeight = 0;
 
-        if (inputs && weights) {
-            poundWeights = weights;
+        if (inputs) {
             totalPounds = inputs.weight;
             baseWeight = inputs.barAndCollar || 0;
         }
 
         const plates = this.compute(totalPounds, poundWeights, baseWeight);
 
-        return { plates: plates };
+        return { frequencyOfPlates: plates, platesConfig: poundWeights };
     }
 
     private compute(totalPounds: number, weights: number[], baseWeight: number): number[] {
