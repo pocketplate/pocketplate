@@ -13,10 +13,6 @@ export class PoundBar extends React.Component {
   @resolve(BarStore)
   private barStore: IBarStore;
 
-  public onChangeWeight(event): void {
-    this.barStore.barConfiguration.weight = event.target.value;
-  }
-
   public onCompute(): void {
     this.barStore.compute();
   }
@@ -32,9 +28,9 @@ export class PoundBar extends React.Component {
               type='number'
               defaultValue={0}
               value={this.barStore.barConfiguration.weight}
-              onChange={event => this.onChangeWeight(event)}
+              onChange={event => this.barStore.barConfiguration.weight = parseInt(event.target.value)}
               InputProps={{
-                endAdornment: <InputAdornment position='end'>LBS</InputAdornment>,
+                endAdornment: <InputAdornment position='end'>Pounds</InputAdornment>,
               }}
             />
           </Grid>
@@ -42,8 +38,7 @@ export class PoundBar extends React.Component {
             <Button onClick={() => this.onCompute()}><Icon>touch_app</Icon></Button>
           </Grid>
         </Grid>
-        <Grid container alignItems="center" spacing={1}>
-        </Grid>
+        <div>{this.barStore.barLoad.toString()}</div>
       </div>
     );
   }

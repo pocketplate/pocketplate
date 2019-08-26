@@ -1,19 +1,26 @@
 import { observable, action } from 'mobx';
-import { injectable } from 'inversify';
-import { BarInput } from '../models/BarInput';
+import { injectable, inject } from 'inversify';
+import { BarConfiguration } from '../models/BarConfiguration';
+import { IBarService, BarService } from '../services/BarService';
 
 export interface IBarStore {
-  barConfiguration: BarInput
-  compute(): Promise<void>
+  barConfiguration: BarConfiguration
+  barLoad: number[]
+  compute(): void
 }
 
 @injectable()
 export class BarStore implements IBarStore {
+  public barConfiguration: BarConfiguration = observable.object(new BarConfiguration());
+
   @observable
-  public barConfiguration: BarInput = observable.object(new BarInput());
+  public barLoad: number[] = [];
+
+  @inject(BarService)
+  private barService: IBarService;
 
   @action
-  public async compute(): Promise<void> {
-    console.log(this.barConfiguration.weight);
+  public compute(): void {
+    this.barLoad = this.barService.fromWeightsToBarLoad(this.barConfiguration.weight);
   }
 }
