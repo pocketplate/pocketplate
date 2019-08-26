@@ -1,7 +1,8 @@
 {
-  "name": "react-project-base",
-  "version": "0.1.0",
+  "name": "pocket-plate",
+  "version": "0.5.0",
   "private": true,
+  "homepage": "https://pocketplate.github.io/pocketplate/",
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
