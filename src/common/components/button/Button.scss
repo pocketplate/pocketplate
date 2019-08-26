@@ -1,0 +1,15 @@
+@import "../../css/palette.scss";
+
+.btn-primary {
+  background-color: $amp-turquoise;
+  border-color: $amp-turquoise;
+
+  &:hover, &:focus, &:not(:disabled):not(.disabled):active {
+    background-color: $amp-turquoise;
+    border-color: $amp-turquoise;
+  }
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
