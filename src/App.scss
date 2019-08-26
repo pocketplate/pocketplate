@@ -1,5 +1,4 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "./common/css/palette.scss";
 
 .App {
   display: flex;
@@ -9,8 +8,4 @@
 .main-frame {
   display: flex;
   height: 100%;
-}
-
-a {
-  color: $amp-turquoise;
 }
