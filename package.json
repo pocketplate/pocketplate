@@ -1,26 +1,50 @@
 {
-  "name": "pocket-plate",
-  "version": "0.5.0",
+  "name": "react-project-base",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://pocketplate.github.io/pocketplate/",
   "dependencies": {
-    "@types/jest": "^24.0.15",
-    "gh-pages": "^2.0.1",
-    "jest-junit": "^7.0.0",
-    "mobx": "^5.13.0",
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@types/i18next": "^12.1.0",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.12",
+    "@types/react": "16.8.23",
+    "@types/react-adal": "^0.4.1",
+    "@types/react-dom": "16.8.4",
+    "@types/react-i18next": "^8.1.0",
+    "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^4.3.4",
+    "bootstrap": "^4.3.1",
+    "core-js": "^3.1.4",
+    "i18next": "^17.0.6",
+    "inversify": "^5.0.1",
+    "inversify-react": "^0.4.1",
+    "keycloak-js": "^6.0.1",
+    "mobx": "^5.11.0",
     "mobx-react": "^6.1.1",
+    "msal": "^1.1.1",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-adal": "^0.4.24",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
+    "react-i18next": "^10.11.4",
+    "react-icons": "^3.7.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "typescript": "^3.5.3"
+    "reflect-metadata": "^0.1.13",
+    "ts-md5": "^1.2.4",
+    "tslint": "^5.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test --testResultsProcessor ./node_modules/jest-junit",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +60,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react-test-renderer": "^16.8.6"
   }
 }
