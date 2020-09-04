@@ -24,7 +24,7 @@
     "mobx": "^5.11.0",
     "mobx-react": "^6.1.1",
     "msal": "^1.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-adal": "^0.4.24",
     "react-bootstrap": "^1.0.0-beta.10",
